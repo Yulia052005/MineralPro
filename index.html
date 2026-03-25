@@ -457,7 +457,7 @@
             <h2 class="section-title">Каталог минералов</h2>
             <div class="minerals-grid">
                 <div class="mineral-card" onclick="showDetails('gold')">
-                    <img src="Золото.jfif" alt="Золото" onerror="this.src='https://via.placeholder.com/400x300/FFD700/000000?text=Золото'">
+                    <img src="gold.jfif" alt="Золото" onerror="this.src='https://via.placeholder.com/400x300/FFD700/000000?text=Золото'">
                     <div class="mineral-info">
                         <h3>🥇 Золото (Au)</h3>
                         <p>Драгоценный металл желтого цвета, один из самых ценных металлов</p>
@@ -483,7 +483,7 @@
                 </div>
 
                 <div class="mineral-card" onclick="showDetails('ruby')">
-                    <img src="Рубин.jpg" alt="Рубин" onerror="this.src='https://via.placeholder.com/400x300/DC143C/FFFFFF?text=Рубин'">
+                    <img src="ruby.jpg" alt="Рубин" onerror="this.src='https://via.placeholder.com/400x300/DC143C/FFFFFF?text=Рубин'">
                     <div class="mineral-info">
                         <h3>❤️ Рубин</h3>
                         <p>Драгоценный камень красного цвета, разновидность корунда</p>
@@ -509,7 +509,7 @@
                 </div>
 
                 <div class="mineral-card" onclick="showDetails('titanium')">
-                    <img src="Титан.png" alt="Титан" onerror="this.src='https://via.placeholder.com/400x300/C0C0C0/000000?text=Титан'">
+                    <img src="titanium.png" alt="Титан" onerror="this.src='https://via.placeholder.com/400x300/C0C0C0/000000?text=Титан'">
                     <div class="mineral-info">
                         <h3>⚙️ Титан (Ti)</h3>
                         <p>Легкий и прочный металл серебристо-белого цвета</p>
@@ -549,7 +549,7 @@
                         <p><strong>Координационное число:</strong> 12</p>
                     </div>
                     <div class="lattice-image">
-                        <img src="Золото.jfif" alt="Кристаллическая решетка золота" onerror="this.src='https://via.placeholder.com/400x300/FFD700/000000?text=Решетка+Золота'">
+                        <img src="gold.jfif" alt="Кристаллическая решетка золота" onerror="this.src='https://via.placeholder.com/400x300/FFD700/000000?text=Решетка+Золота'">
                     </div>
                 </div>
 
@@ -561,7 +561,7 @@
                         <p><strong>Координационное число:</strong> 12</p>
                     </div>
                     <div class="lattice-image">
-                        <img src="Титан.png" alt="Кристаллическая решетка титана" onerror="this.src='https://via.placeholder.com/400x300/C0C0C0/000000?text=Решетка+Титана'">
+                        <img src="titanium.png" alt="Кристаллическая решетка титана" onerror="this.src='https://via.placeholder.com/400x300/C0C0C0/000000?text=Решетка+Титана'">
                     </div>
                 </div>
 
@@ -573,7 +573,7 @@
                         <p><strong>Пространственная группа:</strong> R-3c</p>
                     </div>
                     <div class="lattice-image">
-                        <img src="Рубин.jpg" alt="Кристаллическая решетка рубина" onerror="this.src='https://via.placeholder.com/400x300/DC143C/FFFFFF?text=Решетка+Рубина'">
+                        <img src="ruby.jpg" alt="Кристаллическая решетка рубина" onerror="this.src='https://via.placeholder.com/400x300/DC143C/FFFFFF?text=Решетка+Рубина'">
                     </div>
                 </div>
             </div>
@@ -585,7 +585,7 @@
             <h2 class="section-title">🔍 Виртуальный микроскоп</h2>
             <div class="microscope-container">
                 <div class="microscope-viewer" id="microscopeViewer">
-                    <img id="microscopeImage" src="Золото.jfif" alt="Образец под микроскопом" onerror="this.src='https://via.placeholder.com/500x500/FFD700/000000?text=Золото+100x'">
+                    <img id="microscopeImage" src="gold.jfif" alt="Образец под микроскопом" onerror="this.src='https://via.placeholder.com/500x500/FFD700/000000?text=Золото+100x'">
                 </div>
                 <div class="magnification">
                     Увеличение: <span id="magnificationValue">100x</span>
@@ -689,17 +689,17 @@
 
         const sampleData = {
             'gold': {
-                image: 'Золото.jfif',
+                image: 'gold.jfif',
                 info: 'Золото (Au): ГЦК решетка, атомный радиус 0.144 нм',
                 fallback: 'https://via.placeholder.com/500x500/FFD700/000000?text=Золото'
             },
             'ruby': {
-                image: 'Рубин.jpg',
+                image: 'ruby.jpg',
                 info: 'Рубин (Al₂O₃): Гексагональная структура, примеси Cr³⁺',
                 fallback: 'https://via.placeholder.com/500x500/DC143C/FFFFFF?text=Рубин'
             },
             'titanium': {
-                image: 'Титан.png',
+                image: 'titanium.png',
                 info: 'Титан (Ti): ГПУ решетка, атомный радиус 0.147 нм',
                 fallback: 'https://via.placeholder.com/500x500/C0C0C0/000000?text=Титан'
             }
